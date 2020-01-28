@@ -3,3 +3,8 @@ export * from './home/home.component';
 export * from './footer/footer.component';
 export * from './product/product.component';
 export * from './product-detail/product-detail.component';
+export * from './product-partial/product-partial.component';
+//export * from './
+//export * from './
+//export * from './
+//export * from './

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services';
 import { ActivatedRoute } from '@angular/router';
+import { Product } from 'src/app/entities';
 
 @Component({
   selector: 'app-product-detail',
@@ -9,8 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailComponent implements OnInit {
 
-  detail;
+  product: Product;
   constructor(private productService: ProductService, private activetedRouted: ActivatedRoute) { }
+  commentCount : number = 0;
 
   ngOnInit() {
 
@@ -19,7 +21,7 @@ export class ProductDetailComponent implements OnInit {
     //this.detail=this.productService.getAll().find(f=>f.name.toLowerCase().replace(" ","-")==this.activatedRoute.snapshot.paramMap.get("name")).description;
 
     this.activetedRouted.params.subscribe(p => {
-      this.detail = this.productService.getAll().find(x => x.id == p["id"]).description;
+      this.product = this.productService.getAll().find(x => x.id == p["id"]);
     });
   }
 }

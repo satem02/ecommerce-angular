@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent, FooterComponent, HomeComponent, ProductComponent, ProductDetailComponent, ProductPartialComponent } from './components';
+import {
+  HeaderComponent, FooterComponent, HomeComponent, ProductComponent, ProductDetailComponent,
+  ProductPartialComponent, ProductCommentComponent
+} from './components';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,8 @@ import { HeaderComponent, FooterComponent, HomeComponent, ProductComponent, Prod
     HomeComponent,
     ProductComponent,
     ProductDetailComponent,
-    ProductPartialComponent
+    ProductPartialComponent,
+    ProductCommentComponent
   ],
   imports: [
     BrowserModule,

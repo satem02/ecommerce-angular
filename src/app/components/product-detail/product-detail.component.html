@@ -4,8 +4,8 @@
         <div *ngIf="(commentCount !== 0)">
             <p class="lead text-muted">Ürün Yorum Sayısı {{commentCount}}</p>
         </div>
-        <p class="lead text-muted">{{product.description}}</p>
+        <p class="lead text-muted">{{product?.description}}</p>
     </div>
     
-    <app-product-comment (count)="commentCount = $event" [productId]="product.id"></app-product-comment>
+    <app-product-comment (count)="commentCount = $event" [productId]="product?.id"></app-product-comment>
 </section>

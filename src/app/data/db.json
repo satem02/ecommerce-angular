@@ -1,0 +1,134 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Süper Klavye",
+        "description": "çok iyi bir klavyedir.",
+        "picture": "1.jpg",
+        "detail": "klavyenin detayları, burada belirtilecektir. çok yakında...",
+        "catID": 1
+      },
+      {
+        "id": 2,
+        "name": "Fare",
+        "description": "çok sağlam bir faredir.",
+        "picture": "2.jpg",
+        "detail": "farenin detayları, burada belirtilecektir. çok yakında...",
+        "catID": 1
+      },
+      {
+        "id": 3,
+        "name": "Monitör",
+        "description": "HP marka bir monitördür",
+        "picture": "3.jpg",
+        "detail": "Monitör detayları, burada belirtilecektir. çok yakında...",
+        "catID": 1
+      },
+      {
+        "id": 4,
+        "name": "Yazıcı",
+        "description": "mürekepi bitmeyen yazıcıdır",
+        "picture": "3.jpg",
+        "detail": "Yazıcı detayları, burada belirtilecektir. çok yakında...",
+        "catID": 2
+      },
+      {
+        "id": 5,
+        "name": "Tarayıcı",
+        "description": "herkes tarafından ercih edilir",
+        "picture": "2.jpg",
+        "detail": "Tarayıcı detayları, burada belirtilecektir. çok yakında...",
+        "catID": 2
+      },
+      {
+        "id": 6,
+        "name": "IP Telefon",
+        "description": "Hat gerektirmeyen bir telefon",
+        "picture": "1.jpg",
+        "detail": "P Telefon detayları, burada belirtilecektir. çok yakında...",
+        "catID": 2
+      }
+    ],
+    "productComments": [
+      {
+        "id": 1,
+        "nameSurname": "Ali Veli",
+        "productID": 1,
+        "comment": "süper ürün taviye ederim",
+        "title": "Süper Kalite Ürün"
+      },
+      {
+        "id": 2,
+        "nameSurname": "Sami Çalışkan",
+        "productID": 1,
+        "comment": "süper ürün taviye ederim",
+        "title": "Kırık Ürün"
+      },
+      {
+        "id": 3,
+        "nameSurname": "Yaşar Veli",
+        "productID": 1,
+        "comment": "süper ürün taviye ederim",
+        "title": "Kötü Ürün"
+      },
+      {
+        "id": 4,
+        "nameSurname": "Mert Ulker",
+        "productID": 1,
+        "comment": "süper ürün taviye ederim",
+        "title": "Çok Başarılı Ürün"
+      },
+      {
+        "id": 5,
+        "nameSurname": "Ali Veli",
+        "productID": 4,
+        "comment": "süper ürün taviye ederim",
+        "title": "Sakın almayın"
+      },
+      {
+        "id": 6,
+        "nameSurname": "Ferhat Kaplan",
+        "productID": 2,
+        "comment": "süper ürün taviye ederim",
+        "title": "Kesin Alın"
+      },
+      {
+        "id": 9,
+        "nameSurname": "Ali Aslan",
+        "productID": 2,
+        "comment": "süper ürün taviye ederim",
+        "title": "Başka hiçbir yerde yok"
+      },
+      {
+        "id": 7,
+        "nameSurname": "Hasan Veli",
+        "productID": 2,
+        "comment": "süper ürün taviye ederim",
+        "title": "Alan Binpişman"
+      },
+      {
+        "id": 8,
+        "nameSurname": "Canan Karatay",
+        "productID": 3,
+        "comment": "süper ürün taviye ederim",
+        "title": "Ben yandım siz yanmayın"
+      },
+      {
+        "id": 10,
+        "nameSurname": "Ali Kemal",
+        "productID": 3,
+        "comment": "süper ürün taviye ederim",
+        "title": "Herkese tavsiye ederim"
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "Bilgisayar"
+      },
+      {
+        "id": 2,
+        "name": "Elektronik"
+      }
+    ]
+  }

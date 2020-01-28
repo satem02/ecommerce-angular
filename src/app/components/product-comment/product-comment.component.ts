@@ -16,8 +16,13 @@ export class ProductCommentComponent implements OnInit {
   constructor(private productCommentService: ProductCommentService) { }
 
   ngOnInit() {
-    this.data = this.productCommentService.getAll().filter(f => f.productID == this.productId);
-    this.count.emit(this.data.length);
+    this.productCommentService.getAll().subscribe(
+      response => {
+        this.data = response.filter(x => x.productID == this.productId);
+        this.count.emit(this.data.length);
+      },
+      error => console.log("Product Servisi Hatalı")
+    );
   }
 
 }

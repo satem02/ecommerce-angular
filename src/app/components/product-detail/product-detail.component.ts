@@ -21,7 +21,9 @@ export class ProductDetailComponent implements OnInit {
     //this.detail=this.productService.getAll().find(f=>f.name.toLowerCase().replace(" ","-")==this.activatedRoute.snapshot.paramMap.get("name")).description;
 
     this.activetedRouted.params.subscribe(p => {
-      this.product = this.productService.getAll().find(x => x.id == p["id"]);
+      this.productService.getAll().subscribe(response=> {
+        this.product = response.find(x => x.id == p["id"]);
+      });
     });
   }
 }

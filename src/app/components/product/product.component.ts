@@ -8,12 +8,16 @@ import { ProductService } from 'src/app/services';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  
-  products:Product[];
-  constructor(private productService:ProductService) { }
+
+  products: Product[];
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    this.products=this.productService.getAll();
+    this.productService.getAll().subscribe(
+      response => {
+        this.products = response,
+          error => console.log("Product Servisi Hatalı")
+      });
   }
 
 

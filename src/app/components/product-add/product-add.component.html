@@ -11,6 +11,7 @@
                     <div *ngIf="formProduct.get('name').invalid && formProduct.get('name').touched">
                         <span *ngIf="formProduct.get('name').errors.required">Ad Boş Geçilemez...</span>
                         <span *ngIf="formProduct.get('name').errors.pattern">Sadece Harf...</span>
+                        <span *ngIf="formProduct.get('name').errors.blacklist">xxx ile başlayamaz...</span>
                         <span *ngIf="formProduct.get('name').errors.minlength">En az
                             {{formProduct.get('name').errors.minlength.requiredLength}} karakter...</span>
                     </div>

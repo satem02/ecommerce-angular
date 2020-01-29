@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Category } from 'src/app/entities';
 import { CategoryService } from 'src/app/services/category.service';
 import { ProductService } from 'src/app/services';
+import { Blaclist } from 'src/app/validators';
 
 declare var alertify: any
 @Component({
@@ -13,7 +14,7 @@ declare var alertify: any
 export class ProductAddComponent implements OnInit {
   categories: Category[];
   formProduct = new FormGroup({
-    name: new FormControl("", [Validators.required, Validators.minLength(2), Validators.pattern("^[a-zA-Z]*$")]),
+    name: new FormControl("", [Validators.required, Validators.minLength(2), Validators.pattern("^[a-zA-Z]*$"),Blaclist.NameControl]),
     description: new FormControl(""),
     detail: new FormControl(""),
     catID: new FormControl("")

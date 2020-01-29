@@ -9,7 +9,7 @@ import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import {
   HeaderComponent, FooterComponent, HomeComponent, ProductComponent, ProductDetailComponent,
-  ProductPartialComponent, ProductCommentComponent
+  ProductPartialComponent, ProductCommentComponent, CategoryAddComponent
 } from './components';
 import { environment } from 'src/environments/environment';
 
@@ -34,7 +34,8 @@ export const PROVIDERS = [
     ProductPartialComponent,
     ProductCommentComponent,
     NgTemplateComponent,
-    MailDirective
+    MailDirective,
+    CategoryAddComponent
   ],
   imports: [
     BrowserModule,

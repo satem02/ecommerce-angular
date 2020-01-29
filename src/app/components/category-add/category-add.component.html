@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <br>
+            <br>
+            <form #formCategory="ngForm" (submit)="add()">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Kategori Adı</label>
+                    <input type="text" [(ngModel)]="model.name" class="form-control" aria-describedby="emailHelp"
+                        name="name" #name="ngModel" required placeholder="Bir kategori adı giriniz." minlength="4">
+                    <div *ngIf="name.invalid && name.touched">
+                        <span *ngIf="name.errors.required">Ad Boş Geçilemez...</span>
+                        <span *ngIf="name.errors.minlength">En az 4 karekter...</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="formCategory.invalid">Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<hr>

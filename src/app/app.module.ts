@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import {
@@ -33,7 +34,8 @@ export const PROVIDERS = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule
   ],
   providers: [PROVIDERS],
   bootstrap: [AppComponent]

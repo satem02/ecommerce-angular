@@ -10,7 +10,11 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                  <a [routerLink]="['/product','detail',product.id]" class="btn btn-sm btn-outline-secondary">Detaylar
-                                    </a> <button type="button" (click)="btnAddClick(product)" class="btn btn-sm btn-outline-secondary">Sepete
+                                    </a> 
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" (click)="showModal(product)">Hızlı Erişim</button>
+
+                                    <button type="button" (click)="btnAddClick(product)"
+                                    class="btn btn-sm btn-outline-secondary">Sepete
                                     Ekle</button>
                             </div>
                             <small class="text-muted">9 mins</small>
@@ -20,4 +24,21 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{activeProduct.name}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    {{activeProduct.detail}}
+                </div>
+            </div>
+        </div>
+    </div>`
 </div>

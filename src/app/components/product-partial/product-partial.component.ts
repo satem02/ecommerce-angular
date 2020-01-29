@@ -9,6 +9,7 @@ declare var alertify: any;
 })
 export class ProductPartialComponent implements OnInit {
 
+  activeProduct: Product;
   @Input()
   data;
 
@@ -19,6 +20,10 @@ export class ProductPartialComponent implements OnInit {
 
   btnAddClick(product: Product) {
     alertify.success(product.name + ' Eklendi.');
+  }
+
+  showModal(product: Product) {
+    this.activeProduct = product;
   }
 
 }

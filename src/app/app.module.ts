@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 import { AppComponent } from './app.component';
 import {
   HeaderComponent, FooterComponent, HomeComponent, ProductComponent, ProductDetailComponent,
@@ -30,7 +32,8 @@ export const PROVIDERS = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFontAwesomeModule
   ],
   providers: [PROVIDERS],
   bootstrap: [AppComponent]

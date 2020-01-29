@@ -6,5 +6,5 @@ export * from './product-detail/product-detail.component';
 export * from './product-partial/product-partial.component';
 export * from './product-comment/product-comment.component';
 export * from './category-add/category-add.component';
-//export * from './
+export * from './product-add/product-add.component';
 //export * from './

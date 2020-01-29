@@ -5,11 +5,12 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {
   HeaderComponent, FooterComponent, HomeComponent, ProductComponent, ProductDetailComponent,
-  ProductPartialComponent, ProductCommentComponent, CategoryAddComponent
+  ProductPartialComponent, ProductCommentComponent, CategoryAddComponent, ProductAddComponent
 } from './components';
 import { environment } from 'src/environments/environment';
 
@@ -35,14 +36,16 @@ export const PROVIDERS = [
     ProductCommentComponent,
     NgTemplateComponent,
     MailDirective,
-    CategoryAddComponent
+    CategoryAddComponent,
+    ProductAddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFontAwesomeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [PROVIDERS],
   bootstrap: [AppComponent]

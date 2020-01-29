@@ -14,6 +14,7 @@ import {
 import { environment } from 'src/environments/environment';
 
 import { NgTemplateComponent } from './examples';
+import { MailDirective } from './directives';
 
 export const PROVIDERS = [
   {
@@ -32,7 +33,8 @@ export const PROVIDERS = [
     ProductDetailComponent,
     ProductPartialComponent,
     ProductCommentComponent,
-    NgTemplateComponent
+    NgTemplateComponent,
+    MailDirective
   ],
   imports: [
     BrowserModule,

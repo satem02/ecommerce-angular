@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Product } from 'src/app/entities';
+declare var alertify: any;
 
 @Component({
   selector: 'app-product-partial',
@@ -13,6 +15,10 @@ export class ProductPartialComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  btnAddClick(product: Product) {
+    alertify.success(product.name + ' Eklendi.');
   }
 
 }

@@ -1,0 +1,9 @@
+<ng-template [ngTemplateOutlet]="tempList" [ngTemplateOutletContext]="{outData:cityList}"></ng-template>
+<ng-template [ngTemplateOutlet]="tempList" [ngTemplateOutletContext]="{outData:districtList}"></ng-template>
+
+
+<ng-template #tempList let-inputData="outData">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of inputData">{{item}}</li>
+    </ul>
+</ng-template>

@@ -12,6 +12,9 @@ import {
   ProductPartialComponent, ProductCommentComponent
 } from './components';
 import { environment } from 'src/environments/environment';
+
+import { NgTemplateComponent } from './examples';
+
 export const PROVIDERS = [
   {
     provide: "environment.apiURL",
@@ -28,7 +31,8 @@ export const PROVIDERS = [
     ProductComponent,
     ProductDetailComponent,
     ProductPartialComponent,
-    ProductCommentComponent
+    ProductCommentComponent,
+    NgTemplateComponent
   ],
   imports: [
     BrowserModule,

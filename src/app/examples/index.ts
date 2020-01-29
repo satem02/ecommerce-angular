@@ -1,0 +1,1 @@
+export * from './ng-template/ng-template.component';

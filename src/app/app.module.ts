@@ -16,6 +16,7 @@ import { environment } from 'src/environments/environment';
 
 import { NgTemplateComponent } from './examples';
 import { MailDirective } from './directives';
+import { CKEditorModule } from 'ckeditor4-angular';
 
 export const PROVIDERS = [
   {
@@ -45,7 +46,8 @@ export const PROVIDERS = [
     HttpClientModule,
     AngularFontAwesomeModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CKEditorModule
   ],
   providers: [PROVIDERS],
   bootstrap: [AppComponent]

@@ -5,6 +5,7 @@ import {
   CategoryAddComponent, ProductAddComponent, LayoutComponent
 } from './components';
 import { AuthGuard } from './guards/auth.guard';
+import { LoginComponent } from './components/login/login.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: "product/add", component: ProductAddComponent }
     ]
   },
+  {path :"login" , component:LoginComponent},
   {
     path: 'customers',
     loadChildren: () => import('./modules/customers/customers.module').then(m => m.CustomersModule)

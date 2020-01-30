@@ -18,6 +18,7 @@ import { NgTemplateComponent } from './examples';
 import { MailDirective } from './directives';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { LinkPipe } from './pipes';
+import { LayoutComponent } from './components/layout/layout.component';
 
 export const PROVIDERS = [
   {
@@ -40,7 +41,8 @@ export const PROVIDERS = [
     MailDirective,
     CategoryAddComponent,
     ProductAddComponent,
-    LinkPipe
+    LinkPipe,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+
+this.fonksiyon1().then(res=>this.fonksiyon2().then(res=>this.fonksiyon3().then(()=>console.log("Bütün işler tamam...")))).catch(e=>console.log("hata..."))
+
+fonksiyon1() {
+    return new Promise((resolve,reject)=>{
+      console.log(1);  
+      resolve();    
+    })
+  }
+  fonksiyon2() {
+    return new Promise((resolve,reject)=>{  
+      setTimeout(() => {
+        console.log(2);
+        resolve();
+      }, 2000);    
+    })   
+  }
+  fonksiyon3() {
+    return new Promise((resolve,reject)=>{
+      console.log(3);  
+      resolve();    
+    })
+  }

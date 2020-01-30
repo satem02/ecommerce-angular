@@ -6,10 +6,11 @@ import { CustomersComponent } from './customers.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { CustomerListComponent } from './components/customer-list/customer-list.component';
 
 
 @NgModule({
-  declarations: [CustomersComponent, HeaderComponent, FooterComponent, HomeComponent],
+  declarations: [CustomersComponent, HeaderComponent, FooterComponent, HomeComponent, CustomerListComponent],
   imports: [
     CommonModule,
     CustomersRoutingModule

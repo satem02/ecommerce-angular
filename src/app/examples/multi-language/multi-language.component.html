@@ -1,0 +1,5 @@
+<select class="form-control select-language" #langSelect (change)="changeLanguage(langSelect.value)">
+    <option *ngFor="let lang of translateService.getLangs()" [value]="lang" [selected]="lang === translateService.currentLang">
+        {{ lang }}
+    </option>
+</select>

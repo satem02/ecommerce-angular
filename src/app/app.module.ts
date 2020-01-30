@@ -19,6 +19,7 @@ import { MailDirective } from './directives';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { LinkPipe } from './pipes';
 import { LayoutComponent } from './components/layout/layout.component';
+import { AboutComponent } from './components/about/about.component';
 
 export const PROVIDERS = [
   {
@@ -42,7 +43,8 @@ export const PROVIDERS = [
     CategoryAddComponent,
     ProductAddComponent,
     LinkPipe,
-    LayoutComponent
+    LayoutComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

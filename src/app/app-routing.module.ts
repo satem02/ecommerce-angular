@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: "products", component: ProductComponent },
   { path: "product/detail/:id", component: ProductDetailComponent },
   { path: "category/add", component: CategoryAddComponent },
-  { path: "product/add", component: ProductAddComponent }
+  { path: "product/add", component: ProductAddComponent },
+  { path: 'customers', loadChildren: () => import('./modules/customers/customers.module').then(m => m.CustomersModule) }
 
 ];
 

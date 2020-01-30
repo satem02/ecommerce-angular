@@ -4,6 +4,7 @@ import {
   ProductComponent, HomeComponent, ProductDetailComponent,
   CategoryAddComponent, ProductAddComponent, LayoutComponent
 } from './components';
+import { AuthGuard } from './guards/auth.guard';
 
 
 const routes: Routes = [
@@ -26,7 +27,7 @@ const routes: Routes = [
     loadChildren: () => import('./modules/product/product.module').then(m => m.ProductModule)
   },
   {
-    path: 'admin',
+    path: 'admin', canActivate:[AuthGuard],
     loadChildren: () => import('./modules/admin/admin.module').then(m => m.AdminModule)
   }
 

@@ -23,6 +23,7 @@ import { AboutComponent } from './components/about/about.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { MultiLanguageComponent } from './examples/multi-language/multi-language.component';
+import { LoginComponent } from './components/login/login.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -50,7 +51,8 @@ export const PROVIDERS = [
     LinkPipe,
     LayoutComponent,
     AboutComponent,
-    MultiLanguageComponent
+    MultiLanguageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
